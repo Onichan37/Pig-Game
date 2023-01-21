@@ -12,18 +12,6 @@ const currentScore1El = document.getElementById('current--1');
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 
-//setting value
-/*
-player0ScoreEl.textContent = 0;
-player1ScoreEl.textContent = 0;
-diceEl.classList.add('hidden');
-
-let scores = [0, 0];
-let currentScore = 0;
-let activePlayer = 0;
-let playing = true;
-*/
-
 // creating empty variables to run function
 let scores, currentScore, activePlayer, playing;
 
@@ -96,30 +84,6 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
-
-// new game functionality / resetting all values to it's initial stage
-/*
-btnNew.addEventListener('click', function () {
-  playing = true;
-  // hide dice image
-  diceEl.classList.add('hidden');
-
-  //removing winner
-  document
-    .querySelector(`.player--${activePlayer}`)
-    .classList.remove('player--winner');
-
-  // set values to 0
-  document.getElementById(`score--0`).textContent = 0;
-  document.getElementById('score--1').textContent = 0;
-  currentScore0El.textContent = 0;
-  currentScore1El.textContent = 0;
-
-  // setting active player class to player 1
-  player0El.classList.add('player--active');
-  player1El.classList.remove('player--active');
-});
-*/
 
 // new game functionality / resetting all values to it's initial stage
 btnNew.addEventListener('click', init);
